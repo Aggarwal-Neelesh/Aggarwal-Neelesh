@@ -12,7 +12,7 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Run CodiumAI PR Agent
-        uses: Codium-ai/PR-Agent@latest
+        uses: Codium-ai/PR-Agent@v0.4.5
         env:
           GITHUB_API_TOKEN: ${{ secrets.PR_BUDDY_API_TOKEN }}
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
