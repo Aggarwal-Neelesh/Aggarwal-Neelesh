@@ -1,18 +1,18 @@
-name: PR Buddy
+name: CodiumAI PR Review
 
 on:
   pull_request:
     types: [opened, synchronize, reopened]
 
 jobs:
-  pr_review:
+  ai_pr_review:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
 
-      - name: Run PR Buddy
-        uses: psyycker/PR-Buddy
+      - name: Run CodiumAI PR Agent
+        uses: Codium-ai/PR-Agent@main
         env:
           GITHUB_API_TOKEN: ${{ secrets.PR_BUDDY_API_TOKEN }}
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
