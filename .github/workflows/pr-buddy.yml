@@ -1,0 +1,19 @@
+name: PR Buddy
+
+on:
+  pull_request:
+    types: [opened, synchronize, reopened]
+
+jobs:
+  pr_review:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Run PR Buddy
+        uses: psyycker/PR-Buddy
+        env:
+          GITHUB_API_TOKEN: ${{ secrets.PR_BUDDY_API_TOKEN }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}

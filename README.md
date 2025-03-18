@@ -3,7 +3,7 @@
 - 🌱 I’m currently learning PR Buddy GitHub Action
 - 💞️ I’m looking to collaborate on building MERN Project
 - 📫 How to reach me - Just imagine me and I will be there
-- ⚡ Fun fact: I love anime
+- ⚡ Fun fact: I love anime and sleeping
 
 <!---
 Aggarwal-Neelesh/Aggarwal-Neelesh is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
