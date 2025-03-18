@@ -12,7 +12,7 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Run PR Buddy
-        uses: Aggarwal-Neelesh/pr-buddy@latest
+        uses: psyycker/PR-Buddy
         env:
           GITHUB_API_TOKEN: ${{ secrets.PR_BUDDY_API_TOKEN }}
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
